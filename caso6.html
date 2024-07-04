@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Números enteros, pares e impares</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            text-align: center;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        p {
+            color: #666;
+        }
+
+        #resultados {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Números enteros, pares e impares</h1>
+        <div id="resultados">
+            <h2>Veinte primeros números enteros:</h2>
+            <p id="numerosEnteros"></p>
+            <h2>Diez primeros números pares:</h2>
+            <p id="numerosPares"></p>
+            <h2>Diez primeros números impares:</h2>
+            <p id="numerosImpares"></p>
+        </div>
+
+        <script>
+            function mostrarNumeros() {
+                var contador = 1;
+                var numerosEnteros = "";
+                var numerosPares = "";
+                var numerosImpares = "";
+
+                do {
+                    // Mostrar los veinte primeros números enteros
+                    numerosEnteros += contador + " ";
+                    contador++;
+
+                    // Mostrar los diez primeros números pares
+                    if (contador % 2 === 0) {
+                        numerosPares += contador + " ";
+                    }
+
+                    // Mostrar los diez primeros números impares
+                    if (contador % 2 !== 0) {
+                        numerosImpares += contador + " ";
+                    }
+                } while (contador <= 20);
+
+                // Mostrar resultados en la página HTML
+                document.getElementById("numerosEnteros").textContent = numerosEnteros;
+                document.getElementById("numerosPares").textContent = numerosPares;
+                document.getElementById("numerosImpares").textContent = numerosImpares;
+            }
+
+            // Llamar a la función al cargar la página
+            mostrarNumeros();
+        </script>
+    </div>
+</body>
+</html>

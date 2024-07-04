@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <meta charset="utf-8" />
+    <script src="recurso2.js"></script>
+    <link href="colores.css" rel="stylesheet" />
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div>
+        <h1>Te puedo decir dónde tienes el puntero del Mouse</h1>
+        <p>El Mouse está ahora encima del siguiente cuadrado:</p>
+        <h2 id="respuesta">ninguno</h2>
+        <div id="rojo" onmouseover="escribe(1)" onmouseout="escribe(0)"></div>
+        <div id="amarillo" onmouseover="escribe(2)" onmouseout="escribe(0)"></div>
+        <div id="verde" onmouseover="escribe(3)" onmouseout="escribe(0)"></div>
+        <div id="azul" onmouseover="escribe(4)" onmouseout="escribe(0)"></div>
+    </div>
+</body>
+</html>

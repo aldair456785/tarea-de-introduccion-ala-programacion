@@ -1,0 +1,25 @@
+/* colores.css */
+
+#rojo {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
+
+#amarillo {
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+}
+
+#verde {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+}
+
+#azul {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+}
